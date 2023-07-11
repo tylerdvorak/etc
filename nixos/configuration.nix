@@ -18,7 +18,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Set Hostname
-  networking.hostName = "tonberry-nixos";
+  networking.hostName = "nixos";
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

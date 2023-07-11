@@ -1,5 +1,5 @@
 {
-  description = "Flake for Tonberry";
+  description = "Tyler's Desktop Flake";
 
   # This is the standard format for flake.nix.
   # `inputs` are the dependencies of the flake,
@@ -44,7 +44,7 @@
       # Run the following command in the flake's directory to
       # deploy this configuration on any NixOS system:
       #   sudo nixos-rebuild switch --flake .#nixos-test
-      "tonberry-nixos" = nixpkgs.lib.nixosSystem {
+      "nixos" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         # The Nix module system can modularize configuration,
