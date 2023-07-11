@@ -40,10 +40,6 @@
       #
       # The `nixpkgs.lib.nixosSystem` function is used to build this
       # configuration, the following attribute set is its parameter.
-      #
-      # Run the following command in the flake's directory to
-      # deploy this configuration on any NixOS system:
-      #   sudo nixos-rebuild switch --flake .#nixos-test
       "nixos" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
