@@ -151,6 +151,7 @@ test
       lutris
       mangohud
       onlyoffice-bin
+      piper
       powershell
       protonup-qt
       remmina
