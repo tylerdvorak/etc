@@ -1,5 +1,5 @@
 {
-  description = "Tyler's NixOS Flake";
+  description = "Flake for Tonberry";
 
   # This is the standard format for flake.nix.
   # `inputs` are the dependencies of the flake,
@@ -12,7 +12,7 @@
     # which represents the GitHub repository URL + branch/commit-id/tag.
 
     # Official NixOS package source, using nixos-unstable branch here
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:tylerdvorak/etc";
     # home-manager, used for managing user configuration
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
