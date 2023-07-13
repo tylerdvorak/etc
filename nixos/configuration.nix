@@ -83,8 +83,8 @@
 
   hardware.nvidia = {
 
-    # Modesetting is needed for most wayland compositors
-    modesetting.enable = true;
+    # Modesetting is needed for most wayland compositors - Disablign for now, testing since I'm in X.
+    # modesetting.enable = true;
 
     # Use the open source version of the kernel module
     # Only available on driver 515.43.04+
