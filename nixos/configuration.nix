@@ -189,6 +189,9 @@
     font-awesome
   ];
 
+  #fix Piper and Ratbagd
+  services.ratbagd.enable = true;
+  
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "tyler";
