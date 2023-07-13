@@ -46,6 +46,7 @@
     curl
     git
     grep
+    tldr
 
     #terminal tools
     alacritty
@@ -87,6 +88,7 @@
     gimp
     onlyoffice-bin
     remmina
+    synergy
     teams
     trilium-desktop
     vscode
