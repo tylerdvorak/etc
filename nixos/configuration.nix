@@ -161,6 +161,7 @@
       rofi
       starship
       teams
+      trilium-desktop
       vlc
       vscode
       wget
