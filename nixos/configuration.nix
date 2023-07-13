@@ -161,6 +161,7 @@
       rofi
       starship
       teams
+      tmux
       trilium-desktop
       vlc
       vscode

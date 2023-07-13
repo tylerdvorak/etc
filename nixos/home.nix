@@ -44,7 +44,12 @@
     vim
     htop
     curl
-    rofi
+    git
+    grep
+
+    #terminal tools
+    alacritty
+    tmux
 
     # archives
     zip
@@ -54,8 +59,8 @@
 
     # utils
     flameshot
-    git
-    grep
+    rofi
+    tmux
 
     #languages
     python
