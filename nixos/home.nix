@@ -23,10 +23,10 @@
   # '';
 
   # set cursor size and dpi for 4k monitor
-  xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xft.dpi" = 172;
-  };
+  #xresources.properties = {
+  #  "Xcursor.size" = 16;
+  #  "Xft.dpi" = 172;
+  #};
 
   # basic configuration of git, please change to your own
   programs.git = {
@@ -137,10 +137,11 @@
   programs.fish = {
     enable = true;
     # set aliases
-    shellAbbr = {
-    test  = test
-    };
+    #shellAbbr = {
+    #test  = test
+    #};
   };
+
   programs.nix-index.enableFishIntegration =  true;
 
   # This value determines the home Manager release that your
