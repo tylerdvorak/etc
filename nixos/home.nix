@@ -45,7 +45,6 @@
     htop
     curl
     git
-    grep
     tldr
 
     #terminal tools
