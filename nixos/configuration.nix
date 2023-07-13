@@ -13,6 +13,9 @@
   # Enable Flakes and the new command-line tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  #Kernel Parameters
+  boot.kernelParams = ["nvidia_drm.modeset=1"]; # To use Nvidia
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
