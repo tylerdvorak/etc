@@ -151,7 +151,7 @@
       gimp
       git
       kate
-      libratbagd
+      libratbag
       lutris
       mangohud
       onlyoffice-bin
