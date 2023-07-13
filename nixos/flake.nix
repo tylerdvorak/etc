@@ -13,8 +13,8 @@
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          #This appears to set the config file as an option as well? Should this be set to /etc/config/configuration.nix?
-          /etc/config/configuration.nix
+          #Looks for a local configuration.nix first?
+          ./configuration.nix
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
