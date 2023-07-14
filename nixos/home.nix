@@ -60,10 +60,11 @@
     # utils
     flameshot
     rofi
+    synergy
     tmux
 
     #languages
-    python
+    #python - need a version for this
     powershell
 
     # networking tools
@@ -87,7 +88,6 @@
     gimp
     onlyoffice-bin
     remmina
-    synergy
     teams
     trilium-desktop
     vscode
@@ -110,10 +110,54 @@
     enable = true;
     # custom settings
     settings = {
-      add_newline = false;
-      aws.disabled = true;
-      gcloud.disabled = true;
-      line_break.disabled = true;
+      format = "($git_branch$git_state$git_status)$time $hostname-$username [»](bold green)[$directory](bold cyan)|";
+
+      git_branch ={
+        style = "bold green";
+        format = "[\\[[$branch$tag](bold green)\\]](bold white)";
+      };
+
+      git_status ={
+       format = "' ([\[$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]]($style))'";
+      };
+
+      directory = {
+        style = "bold cyan";
+        truncate_to_repo = false;
+        truncation_length = 1;
+        fish_style_pwd_dir_length = 1;
+      };
+
+      python = {
+        scan_for_pyfiles = false;
+      };
+
+      ruby = {
+        disabled = true;
+        format = "($git_branch$git_state$git_status)$time $hostname-$username [»](bold green)[$directory](bold cyan)|";
+      };
+
+      swift = {
+       disabled = true;
+      };
+
+      hostname = {
+        ssh_only = false;
+        format = "[$hostname]($style)";
+        style = "bold white";
+      };
+
+      username = {
+        show_always = true;
+        style_user = "bold white";
+        format = "[$user]($style)";
+      };
+
+      time = {
+        disabled = false;
+        format = "[$time]($style)";
+        time_format = "%H:%M";
+      };
     };
   };
 
@@ -142,6 +186,7 @@
   };
 
   programs.nix-index.enableFishIntegration =  true;
+
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage

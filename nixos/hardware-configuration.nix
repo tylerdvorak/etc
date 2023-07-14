@@ -13,6 +13,10 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  swapDevices =
+    [ { device = "/dev/disk/by-uuid/a29aba6b-8327-4469-b73b-128a8656f3eb"; }
+    ];
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/89721fb0-258f-461e-a1e9-0dd3da20f24c";
       fsType = "ext4";
@@ -23,19 +27,23 @@
       fsType = "vfat";
     };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/a29aba6b-8327-4469-b73b-128a8656f3eb"; }
-    ];
-
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
+  #networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp4s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
-
+  # This is used to set a manual IP address.
+  networking.interfaces.eth0.ipv4.addresses = [ {
+    address = "192.168.1.15";
+    prefixLength = 24;
+  } ];
+  networking.defaultGateway = "192.168.1.1";
+  networking.nameservers = [ "192.168.1.1
+  " ];
+  boot.kernel.sysctl."net.ipv6.conf.eth0.disable_ipv6" = true;
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
