@@ -1,6 +1,4 @@
 { config, pkgs, ... }:
-
-
 #Test Home Flake for Tyler
 
 {
@@ -37,9 +35,6 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    # here is some command line tools I use frequently
-    # feel free to add your own or remove some of them
-
     neofetch
     vim
     htop
@@ -76,9 +71,6 @@
     which
 
     # nix related
-    #
-    # it provides the command `nom` works just like `nix`
-    # with more details log output
     nix-output-monitor
 
     # productivity
