@@ -110,7 +110,7 @@
     enable = true;
     # custom settings
     settings = {
-      format = "($git_branch$git_state$git_status)$time $hostname-$username [»](bold green)[$directory](bold cyan)|";
+      format = "($git_branch$git_state$git_status)$time $hostname-$username [»](bold green)[$directory](bold cyan)| ";
 
       git_branch ={
         style = "bold green";
@@ -118,7 +118,7 @@
       };
 
       git_status ={
-       format = "' ([\[$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]]($style))'";
+       format = "'([\$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]($style))'";
       };
 
       directory = {
@@ -134,7 +134,7 @@
 
       ruby = {
         disabled = true;
-        format = "($git_branch$git_state$git_status)$time $hostname-$username [»](bold green)[$directory](bold cyan)|";
+        format = "($git_branch$git_state$git_status)$time $hostname-$username [»](bold green)[$directory](bold cyan)| ";
       };
 
       swift = {
