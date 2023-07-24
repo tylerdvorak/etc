@@ -33,6 +33,8 @@
     userEmail = "github@tylerdvorak.com";
   };
 
+  # Setup Hyprland
+
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     neofetch
@@ -57,6 +59,7 @@
     rofi
     synergy
     tmux
+    waybar
 
     #languages
     #python - need a version for this

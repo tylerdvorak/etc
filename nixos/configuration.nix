@@ -85,19 +85,17 @@
   services.xserver.videoDrivers = ["nvidia"];
 
   hardware.nvidia = {
-
-    # Modesetting is needed for most wayland compositors - Disablign for now, testing since I'm in X.
-    # modesetting.enable = true;
-
+    # Modesetting is needed for most wayland compositors
+    modesetting.enable = true;
     # Use the open source version of the kernel module
     # Only available on driver 515.43.04+
     open = true;
-
     # Enable the nvidia settings menu
     nvidiaSettings = true;
-
-    # Optionally, you may need to select the appropriate driver version for your specific GPU.
+    # Optionally, you may need to select the appropriate driver version for your specific GPU. 
     package = config.boot.kernelPackages.nvidiaPackages.stable;
+    #Fix for main screen having issues with Tearing
+    forceFullCompositionPipeline = true;
   };
 
   # Enable the KDE Plasma Desktop Environment.
@@ -189,7 +187,7 @@
     font-awesome
   ];
 
-  #fix Piper and Ratbagd
+  #fix Piper by enabling Ratbagd
   services.ratbagd.enable = true;
   
   # Enable automatic login for the user.
@@ -232,6 +230,8 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = true;
   system.stateVersion = "23.05"; # Did you read the comment?
 
 }
