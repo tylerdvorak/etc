@@ -83,7 +83,7 @@
     gimp
     onlyoffice-bin
     remmina
-    teams
+    teams-for-linux
     trilium-desktop
     vscode
     
