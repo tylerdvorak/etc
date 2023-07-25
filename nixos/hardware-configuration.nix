@@ -40,7 +40,7 @@
     prefixLength = 24;
   } ];
   networking.defaultGateway = "192.168.1.1";
-  networking.nameservers =  "192.168.1.1" ;
+  networking.nameservers = [ "192.168.1.1" ];
   boot.kernel.sysctl."net.ipv6.conf.eth0.disable_ipv6" = true;
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
