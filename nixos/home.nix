@@ -84,8 +84,12 @@
     onlyoffice-bin
     remmina
     teams-for-linux
+    thunderbird
     trilium-desktop
     vscode
+
+    #fun
+    spotify
     
     #gaming
     lutris
