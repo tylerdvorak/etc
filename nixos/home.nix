@@ -117,7 +117,7 @@
       };
 
       git_status ={
-       format = "'([\$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]($style))'";
+       format = "'([\$up_to_date$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]($style))'";
       };
 
       directory = {
