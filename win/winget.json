@@ -10,34 +10,10 @@
 					"PackageIdentifier" : "Bitwarden.Bitwarden"
 				},
 				{
-					"PackageIdentifier" : "JackieLiu.NotepadsApp"
-				},
-				{
 					"PackageIdentifier" : "7zip.7zip"
 				},
 				{
-					"PackageIdentifier" : "angryziber.AngryIPScanner"
-				},
-				{
-					"PackageIdentifier" : "Canonical.Ubuntu.2204"
-				},
-				{
 					"PackageIdentifier" : "Discord.Discord"
-				},
-				{
-					"PackageIdentifier" : "DominikReichl.KeePass"
-				},
-				{
-					"PackageIdentifier" : "Logitech.LogiBolt"
-				},
-				{
-					"PackageIdentifier" : "Logitech.Options"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
@@ -46,49 +22,13 @@
 					"PackageIdentifier" : "Mozilla.Firefox"
 				},
 				{
-					"PackageIdentifier" : "Mozilla.Thunderbird"
-				},
-				{
 					"PackageIdentifier" : "Notepad++.Notepad++"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Office"
-				},
-				{
-					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
-				},
-				{
-					"PackageIdentifier" : "Rufus.Rufus"
 				},
 				{
 					"PackageIdentifier" : "Spotify.Spotify"
 				},
 				{
-					"PackageIdentifier" : "TeamViewer.TeamViewer"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
-					"PackageIdentifier" : "JAMSoftware.TreeSize.Free"
-				},
-				{
 					"PackageIdentifier" : "VideoLAN.VLC"
-				},
-				{
-					"PackageIdentifier" : "vim.vim"
-				},
-				{
-					"PackageIdentifier" : "VivaldiTechnologies.Vivaldi"
-				},
-				{
-					"PackageIdentifier" : "WatchGuardTechnologies.WatchGuardSystemManager"
-				},
-				{
-					"PackageIdentifier" : "WiresharkFoundation.Wireshark"
 				},
 				{
 					"PackageIdentifier" : "Twilio.Authy"
@@ -97,109 +37,16 @@
 					"PackageIdentifier" : "lars-berger.GlazeWM"
 				},
 				{
-					"PackageIdentifier" : "Yubico.YubikeyManager"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsInstallationAssistant"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
-				},
-				{
 					"PackageIdentifier" : "RoyalApps.RoyalTS"
 				},
 				{
 					"PackageIdentifier" : "Starship.Starship"
 				},
 				{
-					"PackageIdentifier" : "Fortinet.FortiClientVPN"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2012.x86"
-				},
-				{
-					"PackageIdentifier" : "mRemoteNG.mRemoteNG"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "PuTTY.PuTTY"
-				},
-				{
-					"PackageIdentifier" : "Cisco.WebexTeams"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2008.x64"
-				},
-				{
 					"PackageIdentifier" : "Alacritty.Alacritty"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2005.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
-				},
-				{
-					"PackageIdentifier" : "Oracle.JavaRuntimeEnvironment"
-				},
-				{
-					"PackageIdentifier" : "Oracle.JavaRuntimeEnvironment"
-				},
-				{
-					"PackageIdentifier" : "Devolutions.RemoteDesktopManager"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsPCHealthCheck"
-				},
-				{
-					"PackageIdentifier" : "LGUG2Z.whkd"
-				},
-				{
-					"PackageIdentifier" : "LGUG2Z.komorebi"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisioViewer"
-				},
-				{
-					"PackageIdentifier" : "GoTo.GoToAssistAgentDesktopConsole"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2008.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86"
-				},
-				{
-					"PackageIdentifier" : "RevoUninstaller.RevoUninstaller"
-				},
-				{
-					"PackageIdentifier" : "KeePassXCTeam.KeePassXC"
-				},
-				{
-					"PackageIdentifier" : "Cisco.WebexTeams"
-				},
-				{
-					"PackageIdentifier" : "Adobe.Acrobat.Reader.32-bit"
-				},
-				{
-					"PackageIdentifier" : "DuoSecurity.Duo2FAAuthenticationforWindows"
 				},
 				{
 					"PackageIdentifier" : "Nvidia.GeForceExperience"
@@ -208,31 +55,10 @@
 					"PackageIdentifier" : "Nvidia.PhysX"
 				},
 				{
-					"PackageIdentifier" : "Cisco.CiscoWebexMeetings"
-				},
-				{
 					"PackageIdentifier" : "Google.Chrome"
 				},
 				{
-					"PackageIdentifier" : "dotPDNLLC.paintdotnet"
-				},
-				{
-					"PackageIdentifier" : "Zoom.Zoom"
-				},
-				{
 					"PackageIdentifier" : "Flameshot.Flameshot"
-				},
-				{
-					"PackageIdentifier" : "SonicWALL.NetExtender"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
-				},
-				{
-					"PackageIdentifier" : "Google.EarthPro"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
