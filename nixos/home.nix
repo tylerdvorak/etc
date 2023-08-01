@@ -102,6 +102,7 @@
     # system tools
     pciutils # lspci
     usbutils # lsusb
+    partition-manager
   ];
 
   # starship - an customizable prompt for any shell
