@@ -1,6 +1,8 @@
 #Setup Script for Tonberry Desktop
 
-#Define Variables and Reboot Workflow
+#Define Variables
+
+#Start WorkFlow
 workflow Setup-Computer
 {
  #Rename Computer
@@ -14,7 +16,7 @@ workflow Setup-Computer
   Install-Module PSWindowsUpdate 
   Add-WUServiceManager -MicrosoftUpdate
   Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -Force
-  Rename-And-Reboot PowerShellWorkflows
+  Restart-Computer -Wait
 
   #Download and Install Cursors
   New-Item -ItemType  Directory -Path C:\temp
@@ -23,8 +25,13 @@ workflow Setup-Computer
   Get-ChildItem "C:\temp\posycursorblack" -Recurse -Filter "*inf" | ForEach-Object { PNPUtil.exe /add-driver $_.FullName /install }
   Invoke-Command {reg import .\test.reg *>&1 | Out-Null}
 
-  #Run Winget to install packages
+  #Run Winget to install packages #Restart After Setting Term Fonts
   winget import winget.json
+
+  #Download and Install Additional Fonts
+  choco update chocolatey
+  choco install nerd-fonts-iosevka
+  choco install nerd-fonts-iosevkaterm
   Restart-Computer -Wait
 
   #Set GlazeWM on Startup
