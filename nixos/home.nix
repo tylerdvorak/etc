@@ -33,7 +33,8 @@
     userEmail = "github@tylerdvorak.com";
   };
 
-  # Setup Hyprland
+  # Setup Flatpak
+  services.flatpak.enable = true; 
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
@@ -57,7 +58,7 @@
     # utils
     flameshot
     rofi
-    synergy
+
     tmux
     waybar
 
