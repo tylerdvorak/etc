@@ -6,7 +6,7 @@ style = "bold green"
 format = "[\\[[$branch$tag](bold green)\\]](bold white)"
 
 [git_status]
-format = "'([\$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]($style))'"
+format = "([\\$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\\]($style))"
 
 [directory]
 style = "bold cyan"
@@ -32,7 +32,7 @@ style = "bold white"
 
 [username]
 show_always = true
-style_user = "bold white"
+style_user = "bold blue"
 format = "[$user]($style)"
 
 [time]

@@ -62,6 +62,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier" : "Chocolatey.Chocolatey"
 				}
 			],
 			"SourceDetails" : 
