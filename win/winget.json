@@ -13,10 +13,22 @@
 					"PackageIdentifier" : "7zip.7zip"
 				},
 				{
+					"PackageIdentifier" : "Guru3D.Afterburner"
+				},
+				{
+					"PackageIdentifier" : "calibre.calibre"
+				},
+				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
+					"PackageIdentifier" : "Git.Git"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "Flameshot.Flameshot"
 				},
 				{
 					"PackageIdentifier" : "Mozilla.Firefox"
@@ -25,13 +37,13 @@
 					"PackageIdentifier" : "Notepad++.Notepad++"
 				},
 				{
+					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
+				},
+				{
 					"PackageIdentifier" : "Spotify.Spotify"
 				},
 				{
 					"PackageIdentifier" : "VideoLAN.VLC"
-				},
-				{
-					"PackageIdentifier" : "Twilio.Authy"
 				},
 				{
 					"PackageIdentifier" : "lars-berger.GlazeWM"
@@ -49,10 +61,16 @@
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.Office"
+				},
+				{
 					"PackageIdentifier" : "Nvidia.GeForceExperience"
 				},
 				{
 					"PackageIdentifier" : "Nvidia.PhysX"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.Broadcast"
 				},
 				{
 					"PackageIdentifier" : "Google.Chrome"
@@ -62,6 +80,15 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "VMware.WorkstationPro"
 				},
 				{
 					"PackageIdentifier" : "Chocolatey.Chocolatey"
