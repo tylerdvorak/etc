@@ -1,19 +1,54 @@
 #Setup Script for Tonberry Desktop
-
+Set-ExecutionPolicy RemoteSigned
 #Define Variables
 
+$psDriveParameters_S = @{
+  Name       = "S"
+  PSProvider = "FileSystem"
+  Root       = "\\192.168.1.200\Susanoo"
+  Persist    = $true
+}
+
+$psDriveParameters_S = @{
+  Name       = "S"
+  PSProvider = "FileSystem"
+  Root       = "\\192.168.1.200\Susanoo"
+  Persist    = $true
+}
+
 #Start WorkFlow
-workflow Setup-Computer
+workflow Computer-Setup
 {
  #Rename Computer
   Rename-Computer -NewName Tonberry -Force -Passthru
 
   #Map Network Drives
-  New-PSDrive -Name "A" -PSProvider "FileSystem" -Root "\\192.168.1.200\Ark" -Persist
-  New-PSDrive -Name "S" -PSProvider "FileSystem" -Root "\\192.168.1.200\Susanoo" -Persist
+  New-Object -TypeName System.Management.Automation.PSDriveInfo -ArgumentList @(
+    $psDriveParameters_A.Name,
+    $psDriveParameters_A.PSProvider,
+    $psDriveParameters_A.Root,
+    $psDriveParameters_A.Description,
+    $psDriveParameters_A.Credential,
+    $psDriveParameters_A.DisplayRoot,
+    $psDriveParameters_A.Persist,
+    $psDriveParameters_A.CurrentLocation
+)  
+New-Object -TypeName System.Management.Automation.PSDriveInfo -ArgumentList @(
+    $psDriveParameters_S.Name,
+    $psDriveParameters_S.PSProvider,
+    $psDriveParameters_S.Root,
+    $psDriveParameters_S.Description,
+    $psDriveParameters_S.Credential,
+    $psDriveParameters_S.DisplayRoot,
+    $psDriveParameters_S.Persist,
+    $psDriveParameters_S.CurrentLocation
+)
+
+These New-Object statements create instances of the System.Management.Automation.PSDriveInfo class with the specified parameters, replicating the functionality of the New-PSDrive cmdlet.
 
   #Run Windows Updates
   Install-Module PSWindowsUpdate 
+  Import-Module PSWindowsUpdate
   Add-WUServiceManager -MicrosoftUpdate
   Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -Force
   Restart-Computer -Wait
@@ -35,13 +70,12 @@ workflow Setup-Computer
   Restart-Computer -Wait
 
   #Set GlazeWM on Startup
-  InlineScript
-  {    
-    $shell = New-Object -comObject WScript.Shell
-    $shortcut = $shell.CreateShortcut("%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\GlazeWM.lnk")
-    $shortcut.TargetPath = "C:\Users\$Env:UserName\AppData\Local\Microsoft\WinGet\Packages\lars-berger.GlazeWM_Microsoft.Winget.Source_8wekyb3d8bbwe\GlazeWM_x64_1.11.1.exe"
-    $shortcut.Save()
-  }
+
+  $shell = New-Object -comObject WScript.Shell
+  $shortcut = $shell.CreateShortcut("%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\GlazeWM.lnk")
+  $shortcut.TargetPath = "C:\Users\$Env:UserName\AppData\Local\Microsoft\WinGet\Packages\lars-berger.GlazeWM_Microsoft.Winget.Source_8wekyb3d8bbwe\GlazeWM_x64_1.11.1.exe"
+  $shortcut.Save()
+
   
   #Move dotfiles to where they belong
   Copy-Item .\.glaze-wm C:\Users\$Env:UserName\
@@ -56,4 +90,5 @@ workflow Setup-Computer
   iwr -useb https://christitus.com/win | iex
 }
 
-Setup-Computer
+Computer-Setup
+
