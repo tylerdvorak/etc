@@ -39,9 +39,10 @@ Copy-Item .\.glaze-wm C:\Users\$Env:UserName\
 Copy-Item .\.config C:\Users\$Env:UserName\
 Copy-Item .\terminal\settings.json %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\
 
+#TO-DO - Not currently working
 #Setup Taskbar? See https://github.com/Ccmexec/PowerShell/tree/c8d2b8b57d4bcd860a2cef9b0753b04280187203/Customize%20TaskBar%20and%20Start%20Windows%2011
-$CustomizeTaskbar = Invoke-WebRequest https://github.com/Ccmexec/PowerShell/blob/master/Customize%20TaskBar%20and%20Start%20Windows%2011/CustomizeTaskbar.ps1
-Invoke-Expression $($CustomizeTaskbar)
+#$CustomizeTaskbar = Invoke-WebRequest https://github.com/Ccmexec/PowerShell/blob/master/Customize%20TaskBar%20and%20Start%20Windows%2011/CustomizeTaskbar.ps1
+#Invoke-Expression $($CustomizeTaskbar)
 
 #Run Chris Titus Tool for Additional Setup, Credit to Chris Titus (https://christitus.com/windows-tool/)
 iwr -useb https://christitus.com/win | iex
